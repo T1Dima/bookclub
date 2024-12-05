@@ -1,0 +1,21 @@
+﻿<Window x:Class="bookclub.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:bookclub"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        
+        <Label Content="Логин" HorizontalAlignment="Left" Margin="150,100,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtLogin" HorizontalAlignment="Left" Margin="200,100,0,0" VerticalAlignment="Top" Width="200"/>
+
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="150,140,0,0" VerticalAlignment="Top"/>
+        <PasswordBox Name="txtPassword" HorizontalAlignment="Left" Margin="200,140,0,0" VerticalAlignment="Top" Width="200"/>
+
+        
+        <Button Content="Войти" HorizontalAlignment="Left" Margin="200,200,0,0" VerticalAlignment="Top" Width="100" Click="BtnButton_Click"/>
+        <Button Content="Войти гостем" HorizontalAlignment="Left" Margin="310,200,0,0" VerticalAlignment="Top" Width="100" Click="BtnGuestButton_Click"/>
+    </Grid>
+</Window>

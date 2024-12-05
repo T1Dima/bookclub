@@ -1,0 +1,19 @@
+﻿<Window x:Class="bookclub.MainPage.DashboardWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:bookclub.MainPage"
+        mc:Ignorable="d"
+        Title="DashboardWindow" Height="450" Width="800">
+    <Grid>
+
+        <Button Content="Просмотр товаров" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="150" Click="BtnViewProducts_Click"/>
+        <Button Content="Просмотр корзины" HorizontalAlignment="Left" Margin="20,60,0,0" VerticalAlignment="Top" Width="150" Click="BtnViewCart_Click"/>
+        <Button Content="Просмотр заказов" HorizontalAlignment="Left" Margin="20,100,0,0" VerticalAlignment="Top" Width="150" Name="BtnViewOrders" Visibility="Collapsed" Click="btnViewOrders_Click"/>
+        <Button Content="Добавить товар" HorizontalAlignment="Left" Margin="20,140,0,0" VerticalAlignment="Top" Width="150" Name="BtnAddProduct" Visibility="Collapsed" Click="btnAddProduct_Click"/>
+
+        
+        <Frame Name="MainFrame" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="200,20,20,20"/>
+    </Grid>
+</Window>
